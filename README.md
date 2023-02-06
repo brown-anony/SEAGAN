@@ -8,7 +8,6 @@ torch_geometric==2.0.2
 networkx==2.5.1
 cuda==11.2
 ```
-
 ## Running
 
 ```
