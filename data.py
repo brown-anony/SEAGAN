@@ -30,8 +30,6 @@ class DBP15K(InMemoryDataset):
     def processed_file_names(self):
         return '%s_%d_%.1f_%.1f_%d.pt' % (self.pair, self.KG_num, self.rate, self.rate2,self.seed)
     
-
-
     def process(self):
         embs = {}
         with open("data/DBP15K/glove.6B.300d.txt") as f:
@@ -63,7 +61,6 @@ class DBP15K(InMemoryDataset):
             rel = torch.cat([rel1, rel2+rel1.max()+1], dim=0)
             data = Data(x=x, edge_index=edge_index, rel=rel,train_set=train_set.t(), val_set=val_set.t(), test_set=test_set.t())
         torch.save(self.collate([data]), self.processed_paths[0])
-
 
     def loadNe(self,path):
         f1 = open(path)
