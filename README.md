@@ -1,5 +1,5 @@
 ## Datasets
-Please download the datasets [here](https://drive.google.com/file/d/1uJ2omzIs0NCtJsGQsyFCBHCXUhoK1mkO/view?usp=sharing) and extract them into root directory.
+Please download the datasets [here]() and extract them into root directory.
 
 ## Environment
 
@@ -15,6 +15,6 @@ cuda==11.2
 ## Running
 
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --data data/DBP15K --lang zh_en
+CUDA_VISIBLE_DEVICES=0 python train.py --data data/DBP15K --lang EN_FR
 ```
 
