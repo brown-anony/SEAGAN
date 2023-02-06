@@ -11,7 +11,6 @@ class L1_Loss(nn.Module):
     def dis(self, x, y):
         return torch.sum(torch.abs(x-y), dim=-1)
     
-    
     def forward(self, x1, x2, train_set, train_batch):
         x1_train, x2_train = x1[train_set[:, 0]], x2[train_set[:, 1]]
         x1_neg1 = x1[train_batch[0].view(-1)].reshape(-1, train_set.size(0), x1.size(1))
