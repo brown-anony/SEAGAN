@@ -9,7 +9,6 @@ def write(a,b):
             f.write(i+'\n')
     f.close()
     
-    
 path='data/DBP15K/D_W_100K_V1/'
 ent_path=path+'train_links'
 ent_path1=path+'ent_ids_1'
@@ -75,7 +74,6 @@ with open(triple1_path, 'r') as f:
             triple_list1.append(triple1)
 f.close()
 write(triple_path1,triple_list1)
-
 triple2_path=path+'rel_triples_2'
 dict4={}
 i=0
