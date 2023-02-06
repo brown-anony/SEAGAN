@@ -15,6 +15,6 @@ cuda==11.2
 ## Running
 
 ```
-CUDA_VISIBLE_DEVICES=0 python train.py --data data/DBP15K --lang EN_FR
+CUDA_VISIBLE_DEVICES=0 python train.py --data data/DBP15K --lang EN_FR_15K_V1
 ```
 
